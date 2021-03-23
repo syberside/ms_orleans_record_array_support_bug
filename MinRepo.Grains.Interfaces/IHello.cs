@@ -13,7 +13,7 @@ namespace MinRepo.Grains.Interfaces
 
 
         // This option will lead to error:
-        // Exception while trying to run client: Named type "MinRepo.Grains.Interfaces.RecordDto" is invalid: Type string "MinRepo.Grains.Interfaces.RecordDto" cannot be resolved.
+        // System.TypeAccessException: Named type "MinRepo.Grains.Interfaces.RecordDto" is invalid: Type string "MinRepo.Grains.Interfaces.RecordDto" cannot be resolved.
         Task<RecordDto[]> SayHello(string greeting);
     }
 

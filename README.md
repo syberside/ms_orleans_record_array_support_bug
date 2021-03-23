@@ -3,7 +3,7 @@
 ## Issue description
 C# `record` type (latest language version feature) could not be used as a collection generic parameter of grain method return type.
 
-Using it produces error on client side: `Exception while trying to run client: Named type "MinRepo.Grains.Interfaces.RecordDto" is invalid: Type string "MinRepo.Grains.Interfaces.RecordDto" cannot be resolved.`
+Using it produces error on client side: `System.TypeAccessException: Named type "MinRepo.Grains.Interfaces.RecordDto" is invalid: Type string "MinRepo.Grains.Interfaces.RecordDto" cannot be resolved.`
 
 ## Example
 `public record RecordDto(string Value);`

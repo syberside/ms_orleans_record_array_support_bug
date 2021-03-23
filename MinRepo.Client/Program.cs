@@ -28,7 +28,7 @@ namespace RecordIsNotSupportedInIterable.Client
             }
             catch (Exception e)
             {
-                Console.WriteLine($"\nException while trying to run client: {e.Message}");
+                Console.WriteLine($"\nException while trying to run client: {e.GetType()} {e.Message}");
                 Console.WriteLine("Make sure the silo the client is trying to connect to is running.");
                 Console.WriteLine("\nPress any key to exit.");
                 Console.ReadKey();
